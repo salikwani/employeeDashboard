@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background-color: #1E1E1E;
+    font-family: 'Inter';
+    font-style: normal;
+}
+div, p, i, table, ul, li, span{
+    margin: 0px;
+    padding: 0px;
+}
+.main-container {
+    margin: 33px 42px 38px 41px;
+    color: #FFFFFF;
+}
+.header {
+    font-weight: 200;
+    font-size: 48px;
+    padding: 38px 51px 39px;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    margin-bottom: 29px;
+}
+.content {
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 311px 355px 306px;
+    gap: 37px;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+}
+.pic-name, .bio, .links, .tasks {
+    border: 2px solid #808080;
+    border-radius: 20px;
+}
+.tasks {
+    grid-row: 1/4;
+    grid-column: 2/3;
+}
+#goku {
+    height: 190px;
+    width: 190px;
+    border-radius: 95px;
+}
+.pic-name {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.bio {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bio-ul {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 20px;
+}
+ul {
+    padding-left: 40px;
+}
+.links {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+    padding: 30px 43px 17px;
+}
+.social {
+    display: grid;
+    grid-template-columns: 30px auto;
+    gap: 26px;
+    color:#808080;
+}
+.task-header {
+    font-size: 48px;
+    line-height: 58px;
+    padding: 30px 40px 41px;
+}
+.task-table{
+    margin-left: 52px;
+    margin-right: 37px;
+    margin-bottom: 33px; 
+    border: 1px solid #808080;
+    border-radius: 20px;
+    border-spacing: 0;
+}
+thead {
+    color: #808080;
+    text-align: center;
+}
+tbody {
+    text-align: center;
+}
+td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.thb {
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+.box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+.br {
+    border-right: 1px solid #808080;
+}
+.pos {
+    text-align: start;
+    padding-left: 29px;
+    padding-right: 30px;
+}
+@media screen and (max-width: 500px) {
+    .content {
+        grid-template-columns: auto;
+    }
+    .tasks {
+        grid-column: 1;
+        grid-row: 4/5 ;
+    }
+}
